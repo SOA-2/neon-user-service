@@ -26,7 +26,6 @@ public class AuthController {
 
     @PostMapping(path = "", consumes = { MediaType.APPLICATION_FORM_URLENCODED_VALUE })
     public LoginConversion convertCurrencyFeign(@RequestParam String client_id, @RequestParam String username, @RequestParam String password, @RequestParam String grant_type) {
-        logger.info("{}", "Controlerrrrr");
         Map<String, String> formData = new HashMap<String, String>();
         formData.put("client_id", client_id);
         formData.put("username", username);
